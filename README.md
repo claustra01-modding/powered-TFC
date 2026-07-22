@@ -2,6 +2,8 @@
 
 Createの動力設備をTerraFirmaCraftの熱・送風・表示へ接続するMinecraft 1.21.1 / NeoForge向け互換Modです。
 
+対応Createバージョン: 6.0.x
+
 https://www.curseforge.com/minecraft/mc-mods/powered-tfc
 
 ## Build
