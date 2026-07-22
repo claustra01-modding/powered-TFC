@@ -6,5 +6,6 @@
   "poweredtfc.display.blast.input_count": "Input Count",
   "poweredtfc.display.blast.catalyst_count": "Catalyst Count",
   "poweredtfc.display.blast.fuel_count": "Fuel Count",
-  "poweredtfc.display.blast.compact": "Compact"
+  "poweredtfc.display.blast.compact": "Compact",
+  "poweredtfc.jei.sequenced_assembly.retains_heat": "Cools naturally during processing and retains its temperature on completion."
 }

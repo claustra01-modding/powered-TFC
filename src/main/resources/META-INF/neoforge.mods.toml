@@ -60,6 +60,9 @@ config="poweredtfc.moreburners.mixins.json"
 [[mixins]]
 config="poweredtfc.createlowheated.mixins.json"
 
+[[mixins]]
+config="poweredtfc.jei.mixins.json"
+
 # The [[accessTransformers]] block allows you to declare where your AT file is.
 # If this block is omitted, a fallback attempt will be made to load an AT from META-INF/accesstransformer.cfg
 #[[accessTransformers]]
@@ -122,6 +125,13 @@ config="poweredtfc.createlowheated.mixins.json"
     versionRange="[0,)"
     ordering="AFTER"
     side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="jei"
+    type="optional"
+    versionRange="[19.25.0.321,)"
+    ordering="AFTER"
+    side="CLIENT"
 
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares
 # that your mod requires GL version 3.2 or higher. Other features will be added. They are side aware so declaring this won't
