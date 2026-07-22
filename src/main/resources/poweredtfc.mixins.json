@@ -6,10 +6,10 @@
   "mixins": [
     "BlazeBurnerHeatMixin",
     "EnchantmentMenuLapisMixin",
-    "EncasedFanBellowsMixin"
+    "EncasedFanBellowsMixin",
+    "SequencedAssemblyHeatMixin"
   ],
   "injectors": {
     "defaultRequire": 1
   }
 }
-
