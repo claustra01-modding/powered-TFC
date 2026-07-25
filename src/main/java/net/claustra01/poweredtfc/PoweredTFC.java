@@ -20,6 +20,7 @@ public class PoweredTFC {
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus and pass them in automatically.
     public PoweredTFC(IEventBus modEventBus, ModContainer modContainer) {
+        PoweredTFCBlocks.register(modEventBus);
         PoweredTFCDisplaySources.register(modEventBus);
         modContainer.registerConfig(ModConfig.Type.COMMON, PoweredTFCConfig.SPEC);
     }

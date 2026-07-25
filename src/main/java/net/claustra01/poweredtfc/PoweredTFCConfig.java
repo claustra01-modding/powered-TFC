@@ -11,6 +11,8 @@ public final class PoweredTFCConfig {
     public static final ModConfigSpec.DoubleValue BLAZE_BURNER_HEAT_SEETHING;
     public static final ModConfigSpec.DoubleValue FAN_BASE_AIR;
     public static final ModConfigSpec.DoubleValue FAN_SPEED_MULTIPLIER;
+    public static final ModConfigSpec.DoubleValue CREATE_TO_TFC_STRESS_IMPACT;
+    public static final ModConfigSpec.DoubleValue TFC_TO_CREATE_STRESS_CAPACITY;
 
     static {
         ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
@@ -39,6 +41,16 @@ public final class PoweredTFCConfig {
         FAN_SPEED_MULTIPLIER = builder
                 .comment("Multiplier applied to absolute fan speed before adding to baseAir. Default: 1.0.")
                 .defineInRange("speedMultiplier", 1.0d, 0.0d, 100.0d);
+        builder.pop();
+
+        builder.comment("Create and TFC mechanical power conversion.")
+                .push("mechanical_converters");
+        CREATE_TO_TFC_STRESS_IMPACT = builder
+                .comment("Create stress impact of the Create-to-TFC converter. Default: 64 SU.")
+                .defineInRange("createToTfcStressImpact", 64.0d, 0.0d, 16384.0d);
+        TFC_TO_CREATE_STRESS_CAPACITY = builder
+                .comment("Create stress capacity supplied by the TFC-to-Create converter. Default: 64 SU.")
+                .defineInRange("tfcToCreateStressCapacity", 64.0d, 0.0d, 16384.0d);
         builder.pop();
 
         SPEC = builder.build();

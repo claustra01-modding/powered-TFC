@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "create:clutch"
+    },
+    {
+      "tag": "minecraft:logs"
+    },
+    {
+      "item": "create:cogwheel"
+    }
+  ],
+  "result": {
+    "id": "poweredtfc:tfc_to_create_converter",
+    "count": 1
+  }
+}

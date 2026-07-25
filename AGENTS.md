@@ -1,6 +1,6 @@
 # Powered TFC 仕様
 
-Createの動力設備をTerraFirmaCraftの熱・送風・表示・エンチャント素材へ接続する、Minecraft 1.21.1 / NeoForge向け互換Modである。
+Createの動力設備をTerraFirmaCraftの熱・送風・mechanical power・表示・エンチャント素材へ接続する、Minecraft 1.21.1 / NeoForge向け互換Modである。
 
 ## 共通開発ルール
 
@@ -30,6 +30,9 @@ Createの動力設備をTerraFirmaCraftの熱・送風・表示・エンチャ�
 - 水平方向へ送風中のEncased Fanは、TFC `IBellowsConsumer` の既定offset先へ `baseAir + abs(speed) * speedMultiplier` の空気を供給する。既定値は100と1.0で、停止中と垂直送風では供給しない。
 - More Create Burners連携はpseudo Mixinとして任意に読み込む。実heatと最大heatの比からKindled温度まで線形補間し、upgrade済みElectric BurnerだけSeething温度を上限にする。redstone制御後の値を上限超過させない。
 - Create: Low-Heated連携はpseudo Mixinとして任意に読み込み、点火中のBasic Burnerは直上へ480℃のTFC heatを供給する。
+- `poweredtfc:create_to_tfc_converter` はFACING面をCreate入力、反対面をTFC出力として、CreateのRPMを同じ角速度のTFC rad/tickへ変換する。Create側のstress impactは既定64 SUでcommon configの `mechanical_converters.createToTfcStressImpact` から変更できる。TFC側では出力面だけを接続面とするSourceNodeとして登録し、既存TFC networkと不正に競合した場合はTFC標準挙動に従ってブロックを破壊する。
+- `poweredtfc:tfc_to_create_converter` はFACING面をCreate出力、反対面に直接隣接するTFC `RotatingBlockEntity` を入力として、TFC rad/tickを同じ角速度のCreate RPMへ変換する。Create側のstress capacityは既定64 SUでcommon configの `mechanical_converters.tfcToCreateStressCapacity` から変更できる。自己変換の直接loopを避けるため、入力が `create_to_tfc_converter` 自身の場合は出力しない。
+- 両converterは赤石信号を受けている間は変換を停止する。FACING面だけにCreate shaftを持ち、TFC面は常にその反対面とする。block item、Create基本creative tab、self-drop loot、shapeless crafting recipeを登録する。
 - Create Sequenced Assemblyの主入力はTFC custom ingredientによるheat条件を使用できる。条件は工程開始時だけ判定し、開始後に要求温度を下回っても工程を継続する。heat条件の有無を問わず、加熱可能な主入力の温度と熱容量を中間アイテムへ引き継いでTFCの時間基準で自然冷却させる。完成時はその時点の温度を抽選済み出力へ引き継ぎ、以後は出力自身の熱容量で冷却する。出力が加熱不可能な場合はheatを付与しない。
 - 921.00006℃以上の `tfc:raw_iron_bloom` はMechanical Pressによる3工程・3 loopsで `tfc:refined_iron_bloom` になり、同温度以上の `tfc:refined_iron_bloom` は同じ工程数で `tfc:metal/ingot/wrought_iron` になる。
 - JEIがあるclientでは、主入力と表示出力がともにTFC heat対応のSequenced Assembly出力tooltipへ、工程中の自然冷却と完成時の温度引き継ぎを英語で表示する。
@@ -39,5 +42,6 @@ Createの動力設備をTerraFirmaCraftの熱・送風・表示・エンチャ�
 ## 実装上の境界
 
 - 熱・送風処理はserver側tickだけで実行する。
+- TFCからCreateへのmechanical power読取とCreate network更新はserver側だけで行う。CreateからTFCへのSourceNodeはTFC network lifecycleに合わせてload/unloadし、clientでは同期済みCreate speedから表示回転を更新する。
 - More Create Burners、Create: Low-Heated、JEIを必須依存へ変えず、各任意連携クラスを対象Modなしの通常ロード経路から参照しない。
 - config値の範囲とkeyは既存world/config互換のため維持する。
