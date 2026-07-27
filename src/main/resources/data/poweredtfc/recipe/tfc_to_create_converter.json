@@ -5,10 +5,10 @@
       "item": "create:clutch"
     },
     {
-      "tag": "minecraft:logs"
+      "item": "create:cogwheel"
     },
     {
-      "item": "create:cogwheel"
+      "item": "create:shaft"
     }
   ],
   "result": {
