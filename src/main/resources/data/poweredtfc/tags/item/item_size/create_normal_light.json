@@ -18,10 +18,6 @@
       "required": false
     },
     {
-      "id": "create:cogwheel",
-      "required": false
-    },
-    {
       "id": "create:crafter_slot_cover",
       "required": false
     },
@@ -42,10 +38,6 @@
       "required": false
     },
     {
-      "id": "create:goggles",
-      "required": false
-    },
-    {
       "id": "create:incomplete_precision_mechanism",
       "required": false
     },
@@ -59,10 +51,6 @@
     },
     {
       "id": "create:precision_mechanism",
-      "required": false
-    },
-    {
-      "id": "create:propeller",
       "required": false
     },
     {
@@ -86,15 +74,7 @@
       "required": false
     },
     {
-      "id": "create:shaft",
-      "required": false
-    },
-    {
       "id": "create:shopping_list",
-      "required": false
-    },
-    {
-      "id": "create:super_glue",
       "required": false
     },
     {
@@ -103,10 +83,6 @@
     },
     {
       "id": "create:whisk",
-      "required": false
-    },
-    {
-      "id": "moreburners:converter_cover",
       "required": false
     },
     {

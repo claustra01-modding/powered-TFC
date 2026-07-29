@@ -2,19 +2,19 @@
   "replace": false,
   "values": [
     {
-      "id": "create:controller_rail",
+      "id": "create:basin",
       "required": false
     },
     {
-      "id": "create:fake_track",
+      "id": "create:creative_fluid_tank",
       "required": false
     },
     {
-      "id": "create:incomplete_track",
+      "id": "create:fluid_tank",
       "required": false
     },
     {
-      "id": "create:track",
+      "id": "create:item_vault",
       "required": false
     }
   ]

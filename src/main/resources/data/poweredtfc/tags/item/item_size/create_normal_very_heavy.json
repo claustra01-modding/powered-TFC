@@ -2,11 +2,11 @@
   "replace": false,
   "values": [
     {
-      "id": "create:framed_glass_trapdoor",
+      "id": "create:package",
       "required": false
     },
     {
-      "id": "create:train_trapdoor",
+      "id": "create:rare_package",
       "required": false
     }
   ]

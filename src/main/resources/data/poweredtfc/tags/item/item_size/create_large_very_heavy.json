@@ -2,15 +2,31 @@
   "replace": false,
   "values": [
     {
-      "id": "create:blaze_burner",
+      "id": "create:black_toolbox",
       "required": false
     },
     {
-      "id": "create:chain_conveyor",
+      "id": "create:blue_toolbox",
       "required": false
     },
     {
-      "id": "create:clockwork_bearing",
+      "id": "create:brown_toolbox",
+      "required": false
+    },
+    {
+      "id": "create:cardboard_boots",
+      "required": false
+    },
+    {
+      "id": "create:cardboard_chestplate",
+      "required": false
+    },
+    {
+      "id": "create:cardboard_helmet",
+      "required": false
+    },
+    {
+      "id": "create:cardboard_leggings",
       "required": false
     },
     {
@@ -30,75 +46,39 @@
       "required": false
     },
     {
-      "id": "create:creative_fluid_tank",
+      "id": "create:cyan_toolbox",
       "required": false
     },
     {
-      "id": "create:creative_motor",
+      "id": "create:goggles",
       "required": false
     },
     {
-      "id": "create:deployer",
+      "id": "create:gray_toolbox",
       "required": false
     },
     {
-      "id": "create:elevator_pulley",
+      "id": "create:green_toolbox",
       "required": false
     },
     {
-      "id": "create:empty_blaze_burner",
+      "id": "create:light_blue_toolbox",
       "required": false
     },
     {
-      "id": "create:hose_pulley",
+      "id": "create:light_gray_toolbox",
       "required": false
     },
     {
-      "id": "create:mechanical_arm",
+      "id": "create:lime_toolbox",
       "required": false
     },
     {
-      "id": "create:mechanical_bearing",
+      "id": "create:magenta_toolbox",
       "required": false
     },
     {
       "id": "create:mechanical_crafter",
-      "required": false
-    },
-    {
-      "id": "create:mechanical_drill",
-      "required": false
-    },
-    {
-      "id": "create:mechanical_harvester",
-      "required": false
-    },
-    {
-      "id": "create:mechanical_mixer",
-      "required": false
-    },
-    {
-      "id": "create:mechanical_piston",
-      "required": false
-    },
-    {
-      "id": "create:mechanical_plough",
-      "required": false
-    },
-    {
-      "id": "create:mechanical_press",
-      "required": false
-    },
-    {
-      "id": "create:mechanical_roller",
-      "required": false
-    },
-    {
-      "id": "create:mechanical_saw",
-      "required": false
-    },
-    {
-      "id": "create:millstone",
       "required": false
     },
     {
@@ -118,55 +98,27 @@
       "required": false
     },
     {
-      "id": "create:packager",
+      "id": "create:orange_toolbox",
       "required": false
     },
     {
-      "id": "create:repackager",
+      "id": "create:pink_toolbox",
       "required": false
     },
     {
-      "id": "create:rope_pulley",
+      "id": "create:purple_toolbox",
       "required": false
     },
     {
-      "id": "create:schematicannon",
+      "id": "create:red_toolbox",
       "required": false
     },
     {
-      "id": "create:steam_engine",
+      "id": "create:white_toolbox",
       "required": false
     },
     {
-      "id": "create:sticky_mechanical_piston",
-      "required": false
-    },
-    {
-      "id": "create:windmill_bearing",
-      "required": false
-    },
-    {
-      "id": "createlowheated:basic_burner",
-      "required": false
-    },
-    {
-      "id": "moreburners:electric_burner",
-      "required": false
-    },
-    {
-      "id": "moreburners:ember_burner",
-      "required": false
-    },
-    {
-      "id": "moreburners:heat_converter",
-      "required": false
-    },
-    {
-      "id": "poweredtfc:create_to_tfc_converter",
-      "required": false
-    },
-    {
-      "id": "poweredtfc:tfc_to_create_converter",
+      "id": "create:yellow_toolbox",
       "required": false
     }
   ]

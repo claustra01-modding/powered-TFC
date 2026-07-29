@@ -14,15 +14,7 @@
       "required": false
     },
     {
-      "id": "create:creative_blaze_cake",
-      "required": false
-    },
-    {
       "id": "create:experience_nugget",
-      "required": false
-    },
-    {
-      "id": "create:incomplete_track",
       "required": false
     },
     {
@@ -43,10 +35,6 @@
     },
     {
       "id": "create:shadow_steel",
-      "required": false
-    },
-    {
-      "id": "create:vertical_gearbox",
       "required": false
     },
     {

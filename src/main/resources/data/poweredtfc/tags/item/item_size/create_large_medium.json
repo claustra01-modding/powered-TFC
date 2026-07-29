@@ -18,10 +18,6 @@
       "required": false
     },
     {
-      "id": "create:flywheel",
-      "required": false
-    },
-    {
       "id": "create:golden_sheet",
       "required": false
     },
@@ -34,18 +30,6 @@
       "required": false
     },
     {
-      "id": "create:large_cogwheel",
-      "required": false
-    },
-    {
-      "id": "create:piston_extension_pole",
-      "required": false
-    },
-    {
-      "id": "create:steam_whistle",
-      "required": false
-    },
-    {
       "id": "create:sturdy_sheet",
       "required": false
     },
@@ -54,7 +38,15 @@
       "required": false
     },
     {
+      "id": "create:wrench",
+      "required": false
+    },
+    {
       "id": "create:zinc_ingot",
+      "required": false
+    },
+    {
+      "id": "moreburners:converter_cover",
       "required": false
     },
     {

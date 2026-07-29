@@ -2,6 +2,10 @@
   "replace": false,
   "values": [
     {
+      "id": "create:cardboard",
+      "required": false
+    },
+    {
       "id": "create:copper_shingle_slab",
       "required": false
     },
@@ -191,6 +195,10 @@
     },
     {
       "id": "create:polished_cut_veridium_slab",
+      "required": false
+    },
+    {
+      "id": "create:rope",
       "required": false
     },
     {
