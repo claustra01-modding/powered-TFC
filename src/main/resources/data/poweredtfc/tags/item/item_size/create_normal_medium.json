@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "moreburners:copper_coil",
+      "required": false
+    },
+    {
+      "id": "moreburners:nickel_coil",
+      "required": false
+    }
+  ]
+}

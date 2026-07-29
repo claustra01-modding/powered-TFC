@@ -1,0 +1,57 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "create:cardboard_sword",
+      "required": false
+    },
+    {
+      "id": "create:chest_minecart_contraption",
+      "required": false
+    },
+    {
+      "id": "create:crushing_wheel",
+      "required": false
+    },
+    {
+      "id": "create:extendo_grip",
+      "required": false
+    },
+    {
+      "id": "create:furnace_minecart_contraption",
+      "required": false
+    },
+    {
+      "id": "create:handheld_worldshaper",
+      "required": false
+    },
+    {
+      "id": "create:item_vault",
+      "required": false
+    },
+    {
+      "id": "create:large_water_wheel",
+      "required": false
+    },
+    {
+      "id": "create:minecart_contraption",
+      "required": false
+    },
+    {
+      "id": "create:potato_cannon",
+      "required": false
+    },
+    {
+      "id": "create:wand_of_symmetry",
+      "required": false
+    },
+    {
+      "id": "create:water_wheel",
+      "required": false
+    },
+    {
+      "id": "create:wrench",
+      "required": false
+    }
+  ]
+}

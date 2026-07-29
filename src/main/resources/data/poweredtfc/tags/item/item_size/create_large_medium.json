@@ -1,0 +1,65 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "create:brass_ingot",
+      "required": false
+    },
+    {
+      "id": "create:brass_sheet",
+      "required": false
+    },
+    {
+      "id": "create:chocolate_bucket",
+      "required": false
+    },
+    {
+      "id": "create:copper_sheet",
+      "required": false
+    },
+    {
+      "id": "create:flywheel",
+      "required": false
+    },
+    {
+      "id": "create:golden_sheet",
+      "required": false
+    },
+    {
+      "id": "create:honey_bucket",
+      "required": false
+    },
+    {
+      "id": "create:iron_sheet",
+      "required": false
+    },
+    {
+      "id": "create:large_cogwheel",
+      "required": false
+    },
+    {
+      "id": "create:piston_extension_pole",
+      "required": false
+    },
+    {
+      "id": "create:steam_whistle",
+      "required": false
+    },
+    {
+      "id": "create:sturdy_sheet",
+      "required": false
+    },
+    {
+      "id": "create:unprocessed_obsidian_sheet",
+      "required": false
+    },
+    {
+      "id": "create:zinc_ingot",
+      "required": false
+    },
+    {
+      "id": "moreburners:nickel_ingot",
+      "required": false
+    }
+  ]
+}

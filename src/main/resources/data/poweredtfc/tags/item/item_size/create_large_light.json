@@ -1,0 +1,305 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "create:andesite_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:black_postbox",
+      "required": false
+    },
+    {
+      "id": "create:black_seat",
+      "required": false
+    },
+    {
+      "id": "create:black_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:black_toolbox",
+      "required": false
+    },
+    {
+      "id": "create:blue_postbox",
+      "required": false
+    },
+    {
+      "id": "create:blue_seat",
+      "required": false
+    },
+    {
+      "id": "create:blue_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:blue_toolbox",
+      "required": false
+    },
+    {
+      "id": "create:brass_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:brown_postbox",
+      "required": false
+    },
+    {
+      "id": "create:brown_seat",
+      "required": false
+    },
+    {
+      "id": "create:brown_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:brown_toolbox",
+      "required": false
+    },
+    {
+      "id": "create:cardboard_boots",
+      "required": false
+    },
+    {
+      "id": "create:cardboard_chestplate",
+      "required": false
+    },
+    {
+      "id": "create:cardboard_helmet",
+      "required": false
+    },
+    {
+      "id": "create:cardboard_leggings",
+      "required": false
+    },
+    {
+      "id": "create:copper_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:creative_crate",
+      "required": false
+    },
+    {
+      "id": "create:cyan_postbox",
+      "required": false
+    },
+    {
+      "id": "create:cyan_seat",
+      "required": false
+    },
+    {
+      "id": "create:cyan_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:cyan_toolbox",
+      "required": false
+    },
+    {
+      "id": "create:gray_postbox",
+      "required": false
+    },
+    {
+      "id": "create:gray_seat",
+      "required": false
+    },
+    {
+      "id": "create:gray_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:gray_toolbox",
+      "required": false
+    },
+    {
+      "id": "create:green_postbox",
+      "required": false
+    },
+    {
+      "id": "create:green_seat",
+      "required": false
+    },
+    {
+      "id": "create:green_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:green_toolbox",
+      "required": false
+    },
+    {
+      "id": "create:light_blue_postbox",
+      "required": false
+    },
+    {
+      "id": "create:light_blue_seat",
+      "required": false
+    },
+    {
+      "id": "create:light_blue_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:light_blue_toolbox",
+      "required": false
+    },
+    {
+      "id": "create:light_gray_postbox",
+      "required": false
+    },
+    {
+      "id": "create:light_gray_seat",
+      "required": false
+    },
+    {
+      "id": "create:light_gray_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:light_gray_toolbox",
+      "required": false
+    },
+    {
+      "id": "create:lime_postbox",
+      "required": false
+    },
+    {
+      "id": "create:lime_seat",
+      "required": false
+    },
+    {
+      "id": "create:lime_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:lime_toolbox",
+      "required": false
+    },
+    {
+      "id": "create:magenta_postbox",
+      "required": false
+    },
+    {
+      "id": "create:magenta_seat",
+      "required": false
+    },
+    {
+      "id": "create:magenta_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:magenta_toolbox",
+      "required": false
+    },
+    {
+      "id": "create:orange_postbox",
+      "required": false
+    },
+    {
+      "id": "create:orange_seat",
+      "required": false
+    },
+    {
+      "id": "create:orange_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:orange_toolbox",
+      "required": false
+    },
+    {
+      "id": "create:package",
+      "required": false
+    },
+    {
+      "id": "create:package_frogport",
+      "required": false
+    },
+    {
+      "id": "create:pink_postbox",
+      "required": false
+    },
+    {
+      "id": "create:pink_seat",
+      "required": false
+    },
+    {
+      "id": "create:pink_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:pink_toolbox",
+      "required": false
+    },
+    {
+      "id": "create:purple_postbox",
+      "required": false
+    },
+    {
+      "id": "create:purple_seat",
+      "required": false
+    },
+    {
+      "id": "create:purple_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:purple_toolbox",
+      "required": false
+    },
+    {
+      "id": "create:rare_package",
+      "required": false
+    },
+    {
+      "id": "create:red_postbox",
+      "required": false
+    },
+    {
+      "id": "create:red_seat",
+      "required": false
+    },
+    {
+      "id": "create:red_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:red_toolbox",
+      "required": false
+    },
+    {
+      "id": "create:white_postbox",
+      "required": false
+    },
+    {
+      "id": "create:white_seat",
+      "required": false
+    },
+    {
+      "id": "create:white_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:white_toolbox",
+      "required": false
+    },
+    {
+      "id": "create:yellow_postbox",
+      "required": false
+    },
+    {
+      "id": "create:yellow_seat",
+      "required": false
+    },
+    {
+      "id": "create:yellow_table_cloth",
+      "required": false
+    },
+    {
+      "id": "create:yellow_toolbox",
+      "required": false
+    }
+  ]
+}

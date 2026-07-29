@@ -170,6 +170,7 @@ tasks.withType(ProcessResources).configureEach {
             mod_license            : mod_license,
             mod_version            : mod_version,
             create_version_range   : create_version_range,
+            tfc_version_range      : tfc_version_range,
     ]
     inputs.properties replaceProperties
 

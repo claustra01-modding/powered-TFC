@@ -108,7 +108,7 @@ config="poweredtfc.jei.mixins.json"
 [[dependencies.${mod_id}]]
     modId="tfc"
     type="required"
-    versionRange="[0,)"
+    versionRange="${tfc_version_range}"
     ordering="AFTER"
     side="BOTH"
 

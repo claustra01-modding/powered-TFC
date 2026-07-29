@@ -20,8 +20,8 @@ Createの動力設備をTerraFirmaCraftの熱・送風・mechanical power・表�
 ## 基本情報
 
 - Mod IDは `poweredtfc`、Java packageは `net.claustra01.poweredtfc`。
-- Minecraftは `1.21.1`、NeoForgeは `21.1.219`、Javaは `21`。
-- Create 6.0.xとTFCは必須依存、More Create Burners（`moreburners`）、Create: Low-Heated（`createlowheated`）、JEI（`jei`、clientのみ）は任意依存とする。Createのmetadata上の対応範囲は `[6.0.0,6.1.0)`、開発・検証版は `gradle.properties` の `create_version` とする。
+- Minecraftは `1.21.1`、NeoForgeは `21.1.235`、Javaは `21`。
+- Create 6.0.xとTFC 4.2.xは必須依存、More Create Burners（`moreburners`）、Create: Low-Heated（`createlowheated`）、JEI（`jei`、clientのみ）は任意依存とする。Createのmetadata上の対応範囲は `[6.0.0,6.1.0)`、TFCは `[4.2.5,4.3.0)`、開発・検証版は `gradle.properties` の各versionとする。
 - versionと依存versionの現在値は `gradle.properties` を正とする。
 
 ## 連携仕様
@@ -38,6 +38,9 @@ Createの動力設備をTerraFirmaCraftの熱・送風・mechanical power・表�
 - JEIがあるclientでは、主入力と表示出力がともにTFC heat対応のSequenced Assembly出力tooltipへ、工程中の自然冷却と完成時の温度引き継ぎを英語で表示する。
 - Create Display Linkへ `poweredtfc:tfc_crucible` と `poweredtfc:tfc_blast_furnace` を登録し、TFC CrucibleとBlast Furnaceの温度を数値またはTFC色名で表示する。
 - Enchantment Tableのlapis slotとshift-click判定は `#poweredtfc:enchanting_lapis` を受け付ける。同tagにはvanilla lapisと `tfc:gem/lapis_lazuli` を含め、tag欠落時も両IDをfallbackとして扱う。
+- Create 6.0.10、Create: Low-Heated、More Create Burnersおよび本Modのconverter itemへTFC 4.2.5のitem size/weightをdataで定義する。各分類は `#poweredtfc:item_size/create_<size>_<weight>` と対応する `poweredtfc:tfc/item_size/create_<size>_<weight>.json` の組にし、任意依存のtag entryはすべて `required: false` とする。
+- item size/weightはTFC自身の定義と近い用途を基準にする。粉はtiny/very_light、nuggetはvery_small/very_light、slabはsmall/very_light、通常blockはsmall/light、oreとcrushed oreはsmall/medium、携帯部品はnormal/light、coilはnormal/medium、railはlarge/very_light、収納と軽量家具はlarge/light、ingot・sheet・bucketはlarge/medium、伝動装置はlarge/heavy、burner・動力機械・背負い装備・本Modconverterはlarge/very_heavy、doorはvery_large/heavy、大型rotor・contraption・vehicleはvery_large/very_heavyとする。stairs、trapdoor、tool、armorなどは対応するTFC分類へ合わせる。
+- 対象版Createの翻訳済みitem/block IDを各1分類へ網羅し、Create: Low-HeatedのBasic Burner、More Create Burnersの全item、本Modのconverter 2種も重複なく分類する。対象JARの変更時は `.tmp/tools/regenerate_create_item_sizes.py` で再生成・網羅性検証し、実在しない任意entryがresource reloadを失敗させないことを保つ。
 
 ## 実装上の境界
 
