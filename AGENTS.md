@@ -38,6 +38,7 @@ Createの動力設備をTerraFirmaCraftの熱・送風・mechanical power・表�
 - JEIがあるclientでは、主入力と表示出力がともにTFC heat対応のSequenced Assembly出力tooltipへ、工程中の自然冷却と完成時の温度引き継ぎを英語で表示する。
 - Create Display Linkへ `poweredtfc:tfc_crucible` と `poweredtfc:tfc_blast_furnace` を登録し、TFC CrucibleとBlast Furnaceの温度を数値またはTFC色名で表示する。
 - Create Basinの`inputTank`は、`BasinBlockEntity#addBehaviours()`内のCreate標準input tank生成直後へMixinを挿入し、`SmartFluidTankBehaviour.INPUT`・容量1000 mBの4区画へ差し替える。fluid update callbackはBasinの`notifyChangeOfContents`へ接続し、Create標準のbehaviour登録・fluid capability構築には差し替え後のtankを使わせる。
+- Create Basin recipeの`BasinRecipe#getMaxFluidInputCount()`もMixinで4へ拡張する。これにより3または4個のfluid ingredientを持つrecipeがCreateのvalidationで除外されず、Create JEIの`BasinCategory`が持つ可変fluid slot描画で表示できる。fluid outputの上限は変更しない。
 - Enchantment Tableのlapis slotとshift-click判定は `#poweredtfc:enchanting_lapis` を受け付ける。同tagにはvanilla lapisと `tfc:gem/lapis_lazuli` を含め、tag欠落時も両IDをfallbackとして扱う。
 - Create 6.0.10、Create: Low-Heated、More Create Burnersおよび本Modのconverter itemへTFC 4.2.5のitem size/weightをdataで定義する。各分類は `#poweredtfc:item_size/create_<size>_<weight>` と対応する `poweredtfc:tfc/item_size/create_<size>_<weight>.json` の組にし、任意依存のtag entryはすべて `required: false` とする。
 - item size/weightはTFC自身の同種itemまたはblockを最優先し、類似物がない場合だけ形状と用途で決める。TFC側で個別定義のない通常blockはsmall/lightとして扱う。Createのgearbox/vertical gearbox、shaft、fluid pipe、pump、fan、press、windmill bearingおよび本Modconverterは、対応するTFC gear box、axle、steel pipe、steel pump、bellows、trip hammer、windmillと同じsmall/lightにする。

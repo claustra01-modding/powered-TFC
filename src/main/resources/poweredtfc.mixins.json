@@ -6,6 +6,7 @@
   "mixins": [
     "BlazeBurnerHeatMixin",
     "BasinInputTankMixin",
+    "BasinRecipeFluidInputLimitMixin",
     "EnchantmentMenuLapisMixin",
     "EncasedFanBellowsMixin",
     "SequencedAssemblyHeatMixin"
