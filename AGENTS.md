@@ -29,7 +29,7 @@ Createの動力設備をTerraFirmaCraftの熱・送風・mechanical power・表�
 - Create Blaze Burnerは直上へTFC heatを供給する。既定温度はSmouldering 80℃、Fading 1100℃、Kindled 1300℃、Seething 1800℃で、common configから変更可能にする。
 - 水平方向へ送風中のEncased Fanは、TFC `IBellowsConsumer` の既定offset先へ `baseAir + abs(speed) * speedMultiplier` の空気を供給する。既定値は100と1.0で、停止中と垂直送風では供給しない。
 - More Create Burners連携はpseudo Mixinとして任意に読み込む。実heatと最大heatの比からKindled温度まで線形補間し、upgrade済みElectric BurnerだけSeething温度を上限にする。redstone制御後の値を上限超過させない。
-- Create: Low-Heated連携はpseudo Mixinとして任意に読み込み、点火中のBasic Burnerは直上へ480℃のTFC heatを供給する。
+- Create: Low-Heated連携はpseudo Mixinとして任意に読み込み、点火中のBasic Burnerは直上へ480℃のTFC heatを供給する。`createlowheated:burner_starters`へ`tfc:firestarter`と`tfc:flint_and_pyrite`を追加し、TFCの着火具でもBasic Burnerを点火できるようにする。
 - `poweredtfc:create_to_tfc_converter` はFACING面をCreate入力、反対面をTFC出力として、CreateのRPMを同じ角速度のTFC rad/tickへ変換する。Create側のstress impactは既定64 SUでcommon configの `mechanical_converters.createToTfcStressImpact` から変更できる。TFC側では出力面だけを接続面とするSourceNodeとして登録し、既存TFC networkと不正に競合した場合はTFC標準挙動に従ってブロックを破壊する。
 - `poweredtfc:tfc_to_create_converter` はFACING面をCreate出力、反対面に直接隣接するTFC `RotatingBlockEntity` を入力として、TFC rad/tickを同じ角速度のCreate RPMへ変換する。Create側のstress capacityは既定64 SUでcommon configの `mechanical_converters.tfcToCreateStressCapacity` から変更できる。自己変換の直接loopを避けるため、入力が `create_to_tfc_converter` 自身の場合は出力しない。
 - 両converterは赤石信号を受けている間は変換を停止する。FACING面だけにCreate shaftを持ち、TFC面は常にその反対面とする。block item、Create基本creative tab、self-drop loot、shapeless crafting recipeを登録する。Create→TFC converterはClutch、小さいCogwheel、`#tfc:axles`を各1個、TFC→Create converterはClutch、小さいCogwheel、Create Shaftを各1個材料とする。
